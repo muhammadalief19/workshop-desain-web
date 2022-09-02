@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,15 +7,14 @@
     <title>Supermarket</title>
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body class="overflow-x-hidden scroll-smooth relative">
-    <header class="w-full grid h-16 grid-cols-2 px-3" id="head">
+  <body class="overflow-x-hidden relative text-slate-400">
+    <header class="absolute w-full grid h-16 grid-cols-2 px-3" id="head">
       <div class="font-semibold text-xl text-primary h-16 flex items-center">Supermarket</div>
-      <nav class="hidden absolute lg:relative lg:flex lg:h-16 items-center shadow-md shadow-slate-400 lg:shadow-none top-14 right-5 lg:inset-0 rounded-md" id="nav-menu">
+      <nav class="hidden absolute lg:relative lg:flex lg:h-16 items-center shadow-md shadow-slate-400 lg:shadow-none top-14 right-5 lg:inset-0 rounded-md bg-white lg:bg-transparent" id="nav-menu">
         <ul class="flex w-28 h-36 lg:w-full lg:h-max flex-col lg:flex-row justify-around items-center text-primary">
-          <li class=""><a href="">Beranda</a></li>
-          <li class=""><a href="">Produk</a></li>
-          <li class=""><a href="">Partner</a></li>
-          <li class=""><a href="">Kontak</a></li>
+          <li class=""><a href="#beranda">Beranda</a></li>
+          <li class=""><a href="#produk">Produk</a></li>
+          <li class=""><a href="#partner">Partner</a></li>
         </ul>
       </nav>
       <button id="hamburger" name="hamburger" type="button" class="block absolute right-6 lg:hidden top-3">
@@ -24,16 +23,79 @@
         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
       </button>
     </header>
-    <div class="w-full px-5 py-3">
+
+    <!-- beranda -->
+    <div class="w-full pt-20 lg:px-10 px-5" id="beranda">
       <div class="w-full grid grid-flow-row gap-6 h-max">
         <div class="w-full flex justify-center">
           <img src="src/img/toko.svg" alt="" />
         </div>
-        <div class="w-full flex justify-center items-end">
-          <button class="px-5 py-3 bg-teal-400 hover:bg-teal-600 transition-colors duration-200 rounded-full text-white font-semibold">Get Started</button>
+        <div class="w-[70%] mx-auto flex justify-center items-end">
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minus culpa cumque beatae, quia impedit modi voluptates harum quam iure sed assumenda iste voluptate ea dolorum eaque? Quia numquam facilis natus rem officiis sit
+            maiores facere, harum rerum? Accusamus distinctio ex perspiciatis soluta in eaque excepturi nihil, neque tempore quia fugiat accusantium numquam nam, veritatis, earum molestiae odio laboriosam doloremque aperiam officiis natus
+            saepe praesentium! Libero adipisci, iure nesciunt tempore odit quasi nihil beatae exercitationem saepe dignissimos? Sed laborum maxime dolorem nihil recusandae, exercitationem repellat omnis quod inventore, ipsam maiores quam!
+            Ut rerum dicta ipsam, nesciunt incidunt itaque aliquam veritatis.
+          </p>
         </div>
       </div>
+      <!-- beranda -->
+
+      <!-- produk -->
+      <div class="w-[80%] mx-auto pt-20" id="produk">
+        <h1 class="font-bold text-2xl text-center mb-7">Produk</h1>
+        <ul class="w-full grid lg:grid-cols-3 grid-cols-1 gap-4">
+          <li class="">
+            <div class="w-full overflow-hidden">
+              <img src="src/img/produk-1.svg" alt="" class="rounded-sm hover:scale-125 duration-150 transition-all" />
+            </div>
+          </li>
+          <li class="">
+            <div class="w-full overflow-hidden">
+              <img src="src/img/produk-2.svg" alt="" class="rounded-sm hover:scale-125 duration-150 transition-all" />
+            </div>
+          </li>
+          <li class="">
+            <div class="w-full overflow-hidden">
+              <img src="src/img/produk-3.svg" alt="" class="rounded-sm hover:scale-125 duration-150 transition-all" />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- produk -->
+
+      <!-- partner -->
+      <div class="w-full pt-20" id="partner">
+        <h1 class="text-2xl font-bold text-center mb-7">Partner</h1>
+        <div class="w-full">
+          <ul class="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-6">
+            <li class="">
+              <div class="w-full">
+                <img src="src/img/partner-1.svg" alt="" class="aspect-video grayscale hover:grayscale-0 transition-all duration-300" />
+              </div>
+            </li>
+            <li class="">
+              <div class="w-full">
+                <img src="src/img/partner-2.svg" alt="" class="aspect-video grayscale hover:grayscale-0 transition-all duration-300" />
+              </div>
+            </li>
+            <li class="">
+              <div class="w-full">
+                <img src="src/img/partner-4.svg" alt="" class="aspect-video grayscale hover:grayscale-0 transition-all duration-300" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- partner -->
     </div>
+    <!-- footer -->
+    <footer class="text-white bg-gray-500 flex justify-center items-center h-20 w-full">
+      <div class="">
+        <p class="">Copyright Supermarket 2022</p>
+      </div>
+    </footer>
+    <!-- footer -->
     <script src="src/js/script.js"></script>
   </body>
 </html>
